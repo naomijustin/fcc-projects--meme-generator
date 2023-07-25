@@ -2,8 +2,13 @@ import React from "react";
 
 export default function Meme () {
     return (
-        <div>
-            Test meme
-        </div>
+        <section className="section-meme">
+            <div className="input-wrapper">
+                <input type="text"/>
+                <input type="text"/>
+            </div>
+            <button>Get a new meme image</button>
+            
+        </section>
     )
 }
