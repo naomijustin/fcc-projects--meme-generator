@@ -53,6 +53,7 @@ input[type=text] {
   height: 35px;
   border-radius: 5px;
   border: 1px solid #D5D4D8;
+  text-indent: 8px;
 }
 button {
   width: 100%;
@@ -71,6 +72,7 @@ button {
 .btn-GetNewMeme {
   max-width: 550px;
   width: 100%;
+  cursor: pointer;
 }
 
 /* font-family: 'Anton', sans-serif; */
