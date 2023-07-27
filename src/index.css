@@ -64,7 +64,13 @@ button {
   font-weight: 700;
 }
 .icon-Framedpicture {
+  margin-bottom: -5px;
   width: 20px;
   height: 20px;
 }
+.btn-GetNewMeme {
+  max-width: 550px;
+  width: 100%;
+}
+
 /* font-family: 'Anton', sans-serif; */

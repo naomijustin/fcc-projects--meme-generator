@@ -8,7 +8,7 @@ export default function Meme () {
                 <input type="text"/>
                 <input type="text"/>
             </div>
-            <button>Get a new meme image <img src={framedPicture} className="icon-Framedpicture"/></button>
+            <button className="btn-GetNewMeme">Get a new meme image <img src={framedPicture} className="icon-Framedpicture"/></button>
             
         </section>
     )
