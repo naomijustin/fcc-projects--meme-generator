@@ -1,7 +1,15 @@
 import React from "react";
 import framedPicture from "../images/framed-picture.png"
+import memesData from "../memeData.js"
+
+console.log(memesData);
 
 export default function Meme () {
+    function randomImage() {
+        let random = Math.floor(Math.random() * 100);
+        console.log(random);
+    }
+
     return (
         <main>
             <form className="section-meme">
@@ -9,7 +17,7 @@ export default function Meme () {
                     <input type="text" placeholder="Top Text"/>
                     <input type="text" placeholder="Bottom Text"/>
                 </div>
-                <button className="btn-GetNewMeme">Get a new meme image <img src={framedPicture} className="icon-Framedpicture"/></button>
+                <button className="btn-GetNewMeme" onClick={randomImage}>Get a new meme image <img src={framedPicture} className="icon-Framedpicture"/></button>
             </form>
         </main>
     )
