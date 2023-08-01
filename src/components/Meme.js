@@ -2,8 +2,6 @@ import React from "react";
 import framedPicture from "../images/framed-picture.png"
 import memesData from "../memeData.js"
 
-console.log(memesData);
-
 export default function Meme () {
     function randomImage() {
         let random = Math.floor(Math.random() * 100);
