@@ -4,9 +4,8 @@ import memesData from "../memeData.js"
 
 export default function Meme () {
     function randomImage() {
-        let random = Math.floor(Math.random() * 100);
+        let random = Math.floor(Math.random() * memesData.data.memes.length);
         console.log(memesData.data.memes[random].url);
-        //console.log(memesData.data.memes.url[random]);
     }
 
     return (
