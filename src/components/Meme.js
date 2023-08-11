@@ -5,8 +5,14 @@ import memesData from "../memeData.js"
 export default function Meme () {
     function randomImage() {
         let random = Math.floor(Math.random() * memesData.data.memes.length);
+        let url = memesData.data.memes[random].url
         console.log(memesData.data.memes[random].url);
+        setImg(url);
     }
+
+    const [img, setImg] = React.useState("");
+
+    
 
     return (
         <main>
@@ -16,6 +22,7 @@ export default function Meme () {
                     <input type="text" placeholder="Bottom Text"/>
                 </div>
                 <button className="btn-GetNewMeme" onClick={randomImage}>Get a new meme image <img src={framedPicture} className="icon-Framedpicture"/></button>
+                <img className="img-Meme" src={img}></img>
             </div>
         </main>
     )
