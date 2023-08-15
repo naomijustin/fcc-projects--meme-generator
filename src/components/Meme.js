@@ -4,19 +4,19 @@ import memesData from "../memeData.js"
 
 export default function Meme () {
     
-    const allMemeImages = memesData;
     const [img, setImg] = React.useState({
             topText: '',
             bottomText: '',
             randomImage: "http://i.imgflip.com/1bij.jpg"
         });
     
+    const [allMemeImages, setAllMemeImages] = React.useState(memesData);
+
     function randomImage() {
         let random = Math.floor(Math.random() * allMemeImages.data.memes.length);                
         setImg(function(prevState) {
             return {
-                topText: '',
-                bottomText: '',
+                ...prevState,
                 randomImage: allMemeImages.data.memes[random].url
             }
         })
