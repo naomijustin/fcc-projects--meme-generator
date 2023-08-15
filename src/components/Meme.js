@@ -3,16 +3,15 @@ import framedPicture from "../images/framed-picture.png"
 import memesData from "../memeData.js"
 
 export default function Meme () {
+    
+    const [img, setImg] = React.useState("http://i.imgflip.com/1bij.jpg");
+
     function randomImage() {
         let random = Math.floor(Math.random() * memesData.data.memes.length);
         let url = memesData.data.memes[random].url
         console.log(memesData.data.memes[random].url);
         setImg(url);
     }
-
-    const [img, setImg] = React.useState("");
-
-    
 
     return (
         <main>

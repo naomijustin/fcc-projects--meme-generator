@@ -74,5 +74,9 @@ button {
   width: 100%;
   cursor: pointer;
 }
+.img-Meme {
+  max-width: 550px;
+  width: 100%;
+}
 
 /* font-family: 'Anton', sans-serif; */
