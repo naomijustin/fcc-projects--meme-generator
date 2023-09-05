@@ -29,8 +29,12 @@ export default function Meme () {
                     <input type="text" placeholder="Top Text"/>
                     <input type="text" placeholder="Bottom Text"/>
                 </div>
-                <button className="btn-GetNewMeme" onClick={randomImage}>Get a new meme image <img src={framedPicture} className="icon-Framedpicture"/></button>
-                <img className="img-Meme" src={img.randomImage}></img>
+                <button className="btn-GetNewMeme" onClick={randomImage}>Get a new meme image <img src={framedPicture} className="icon-Framedpicture"/></button>                
+                <div className="meme">
+                    <img src={img.randomImage} className="meme--image" />
+                    <h2 className="meme--text top">One does not simply</h2>
+                    <h2 className="meme--text bottom">Walk into Mordor</h2>
+            </div>
             </div>
         </main>
     )
