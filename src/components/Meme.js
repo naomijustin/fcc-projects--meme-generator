@@ -20,11 +20,11 @@ export default function Meme () {
     }, []);
 
     function randomImage() {
-        let random = Math.floor(Math.random() * allMemeImages.data.memes.length);                
+        let random = Math.floor(Math.random() * allMemeImages.length);                
         setMeme(function(prevState) {
             return {
                 ...prevState,
-                randomImage: allMemeImages.data.memes[random].url
+                randomImage: allMemeImages[random].url
             }
         })
     }
