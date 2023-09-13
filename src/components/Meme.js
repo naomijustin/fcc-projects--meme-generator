@@ -1,6 +1,6 @@
 import React from "react";
 import framedPicture from "../images/framed-picture.png"
-import memesData from "../memeData.js"
+//import memesData from "../memeData.js"
 
 export default function Meme () {
     
@@ -10,14 +10,14 @@ export default function Meme () {
             randomImage: "http://i.imgflip.com/1bij.jpg"
         });
     
-    const [allMemeImages, setAllMemeImages] = React.useState(memesData);    
+    const [allMemeImages, setAllMemeImages] = React.useState();    
 
 
     React.useEffect(function() {
         fetch("https://api.imgflip.com/get_memes")
         .then(response => response.json())
-        .then(data => console.log(data.memes))
-    })
+        .then(data => setAllMemeImages(data.data.memes));
+    }, []);
 
     function randomImage() {
         let random = Math.floor(Math.random() * allMemeImages.data.memes.length);                
