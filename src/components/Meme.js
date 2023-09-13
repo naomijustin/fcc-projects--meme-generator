@@ -1,6 +1,5 @@
 import React from "react";
 import framedPicture from "../images/framed-picture.png"
-//import memesData from "../memeData.js"
 
 export default function Meme () {
     
